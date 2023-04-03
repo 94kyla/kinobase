@@ -1,0 +1,232 @@
+.main__col-header {
+    padding: 20px 0px;
+    text-align: center;
+    font-family: Tahoma;
+    font-size: 14px;
+    line-height: 1.2;
+    font-weight: 700;
+    color: #3e3e3e;
+    text-shadow: 1px 0px 0px #fafafa, 0px 1px 0px #fafafa, -1px 0px 0px #fafafa, 0px -1px 0px #fafafa;
+}
+
+.main__col {
+    padding-bottom: 10px;
+}
+
+.main__col .container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.main__col-header span {
+    font-size: 17px;
+}
+
+.main__filmGallery {
+    flex: 0 1 740px;
+}
+
+.main__offers {
+    flex: 0 1 245px;
+    background: url('../img/navbar-grey.png');
+    border-radius: 0.25rem;
+    align-self: end;
+}
+
+.offers__el {
+    padding: 10px 0px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+
+.offers__el-header {
+    font-size: 15px;
+    line-height: 1.2;
+    font-weight: 700;
+    color: #ffffff;
+    background: darkslateblue;
+    margin: 0px 10px;
+    border-radius: 0.25rem;
+    overflow: visible;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    background: url('../img/sub-header.png') 0 0/100% no-repeat;
+    justify-content: end;
+}
+
+.offers__el-header span {
+    color: #f70f3b;
+}
+
+.offers__el-row {
+    display: flex;
+    width: 100%;
+    border-bottom: 1px solid #101010;
+    padding: 5px;
+    gap: 5px;
+}
+
+.offers__el-img {
+    background-color: #373737;
+    padding: 3px;
+    overflow: hidden;
+    flex: 1 0 71px;
+}
+
+.offers__el-img img {
+    width: 100%;
+    height: 100%;
+}
+
+.offers__el-col {
+    flex: 0 1 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.offers__el-label {
+    font-size: 11px;
+    line-height: 1.2;
+    font-weight: 700;
+    text-decoration: underline;
+    color: #ffffff;
+}
+
+.offers__el-label span {
+    font-weight: 400;
+    text-decoration: none;
+    color: #dfdfdf;
+    text-decoration: none;
+}
+
+.offers__el-text {
+    font-size: 11px;
+    line-height: 1.2;
+    font-weight: 400;
+    color: #ffffff;
+}
+
+.offers__el-under {
+    font-size: 12px;
+    line-height: 1.2;
+    font-weight: 400;
+    color: #ffffff;
+    text-align: center;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.main__filmGallery {
+    display: flex;
+    gap: 28px;
+}
+
+.filmGallery__el {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    flex: 1 1 33.333%;
+}
+
+.filmGallery__ep-header.short {
+    margin-bottom: 14px;
+}
+
+.filmGallery__ep-header {
+    font-size: 12px;
+    line-height: 1.2;
+    font-weight: 400;
+    color: #202020;
+}
+
+.filmGallery__el-img {
+    max-height: 150px;
+    margin-bottom: 25px;
+}
+
+.filmGallery__el-img img {
+    background-color: #cacaca;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    padding: 3px;
+}
+
+.filmGallery__el-txt {
+    font-size: 11px;
+    line-height: 1.2;
+    font-weight: 400;
+    color: #202020;
+    margin-bottom: 10px;
+}
+
+.filmGallery__el-btn {
+    background: linear-gradient(to bottom, #202020 50%, #101010 50%);
+    font-size: 11px;
+    line-height: 1.2;
+    font-weight: 700;
+    color: #ffffff;
+    padding: 5px 10px;
+    border-radius: 0.25rem;
+    transition: all 0.5s ease 0s;
+}
+
+.filmGallery__el-btn:hover {
+    box-shadow: 0px 3px 0px 0px rgba(96, 96, 96, 1);
+}
+
+@media (max-width:1024px) {
+    .main__col .container {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .main__filmGallery {
+        flex: 0 1 auto;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .filmGallery__el{
+        align-items: center;
+
+    }
+    .main__offers {
+        flex: 0 1 auto;
+        background: url('../img/navbar-grey.png');
+        border-radius: 0.25rem;
+        max-width: 75vw;
+        margin: 0 auto;
+    }
+
+    .offers__el-row {
+        display: flex;
+        width: 100%;
+        border-bottom: 1px solid #101010;
+        padding: 5px;
+        gap: 5px;
+    }
+
+    .offers__el-img {
+        background-color: #373737;
+        padding: 3px;
+        overflow: hidden;
+        max-height: 70px;
+        max-width: 70px;
+    }
+
+    .offers__el-img img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
